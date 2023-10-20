@@ -1,88 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @font-face {
-      font-family: 'Open Sauce';
-      src: url('https://github.com/shrdst/home/raw/main/OpenSauceSans-SemiBold.ttf') format('truetype');
-    }
+<style>
+  @font-face {
+    font-family: 'Open Sauce';
+    src: url('https://github.com/shrdst/home/raw/main/OpenSauceSans-SemiBold.ttf') format('truetype');
+  }
 
-    body {
-      background-color: #483E94;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
+  .contenitore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .contenitore {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  .quadrato1, .quadrato2, .quadrato3 {
+    width: 250px;
+    height: 250px;
+    border: 7px dashed #7361EE;
+    border-radius: 38px;
+    margin: 10px;
+    background-color: #483E94;
+  }
 
-    .quadrato1, .quadrato2, .quadrato3 {
-      flex: 1;
-      max-width: 300px;
-      margin: 10px;
-      background-color: #483E94;
-      border-radius: 38px;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      border: 7px dashed #7361EE;
-    }
+  .logo {
+    width: 200px;
+    z-index: 1;
+  }
 
-    .logo {
-      width: 200px;
-      z-index: 1;
-    }
+  .testo-quadrato {
+    text-align: justify;
+    font-size: 18.5px;
+    color: white;
+    padding: 10px;
+    line-height: 0.4;
+    font-family: 'Open Sauce', sans-serif;
+  }
 
-    .testo-quadrato {
-      font-size: 18.5px;
-      color: white;
-      line-height: 1.2;
-      font-family: 'Open Sauce', sans-serif;
-    }
-  </style>
+  /* Stili per i link in testo bianco */
+  .testo-quadrato a {
+    color: white;
+    text-decoration: none;
+  }
+</style>
 </head>
-<body>
+<body style="background-color: #483E94;">
   <div class="contenitore">
     <img src="https://raw.githubusercontent.com/shrdst/home/main/logo.png" alt="Logo di Shard" class="logo">
   </div>
-  <div class="contenitore">
-    <div class="wrapper">
-      <div class="quadrato1">
-        <div class="testo-quadrato">
-          <p>▢ La scimmia dell’estate</p>
-          <p>▢ La scimmia di maggio</p>
-          <p>(playlist)</p>
-          <p>▢ La presa bene (playlist)</p>
-          <p>▢ La scimmia di aprile</p>
-          <p>(playlist)</p>
-          <p>▢ This is my dance space</p>
-          <p>▢ SHRD (broadcast)</p>
-        </div>
+  <div class="wrapper">
+    <div class="quadrato1">
+      <div class="testo-quadrato">
+        <p><a href="https://open.spotify.com/playlist/5jPgYiqc97EuSHEF7UCXKC?si=839d4a1e7519409f">▢ La scimmia dell’estate</a></p>
+        <p><a href="https://open.spotify.com/playlist/65aqxIe6AkiUzSkpQcPu0H?si=cad7d19269d1454b">▢ La scimmia di maggio</a></p>
+        <p><a href="https://open.spotify.com/playlist/1wCtjpxt5MZbBi1XwTGYUN?si=50c7f9e600a54e16">▢ La presa bene (playlist)</a></p>
+        <p><a href="https://open.spotify.com/playlist/5Nz3hzzESBjh2hBw36crJn?si=dce459070242483b">▢ La scimmia di aprile</a></p>
+        <p><a href="https://shrdst.github.io/articles/thisismydancespace/">▢ This is my dance space</a></p>
+        <p><a href="https://t.me/atlantidedischi">▢ SHRD (broadcast)</a></p>
       </div>
-      <div class="quadrato2">
-        <div class="testo-quadrato">
-          <p>Testo quadrato 2</p>
-        </div>
+    </div>
+    <div class="quadrato2">
+      <div class="testo-quadrato">
+        <p>Testo quadrato 2</p>
       </div>
-      <div class="quadrato3">
-        <div class="testo-quadrato">
-          <p>Testo quadrato 3</p>
-        </div>
+    </div>
+    <div class="quadrato3">
+      <div class="testo-quadrato">
+        <p>Testo quadrato 3</p>
       </div>
     </div>
   </div>
