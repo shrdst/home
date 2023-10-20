@@ -20,7 +20,7 @@
     justify-content: center;
   }
 
-  .quadrato1, .quadrato2, .quadrato3 {
+  .quadrato1, .quadrato3 {
     width: 250px;
     height: 250px;
     border: 7px dashed #7361EE;
@@ -32,6 +32,18 @@
   .logo {
     width: 200px;
     z-index: 1;
+  }
+
+  .quadrato2 {
+    width: 250px;
+    height: 250px;
+    border: 7px dashed #7361EE;
+    border-radius: 38px;
+    margin: 10px;
+    background-color: #483E94;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .testo-quadrato {
@@ -47,6 +59,13 @@
   .testo-quadrato a {
     color: white;
     text-decoration: none;
+  }
+
+  /* Stili per l'incorporamento di Instagram */
+  .quadrato2 iframe {
+    border-radius: 38px;
+    width: 100%;
+    height: 100%;
   }
 </style>
 </head>
@@ -66,12 +85,11 @@
       </div>
     </div>
     <div class="quadrato2">
-      <div class="testo-quadrato">
-        <p>Testo quadrato 2</p>
-      </div>
+      <!-- Codice di incorporamento di Instagram -->
+      <iframe src="https://www.instagram.com/shrd____/embed/" frameborder="0" scrolling="no"></iframe>
     </div>
     <div class="quadrato3">
-      <div class="testo-quadrato">
+      <div class "testo-quadrato">
         <p>Testo quadrato 3</p>
       </div>
     </div>
