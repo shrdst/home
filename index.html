@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  @font-face {
-    font-family: 'Open Sauce';
-    src: url('https://github.com/shrdst/home/raw/main/OpenSauceSans-SemiBold.ttf') format('truetype');
-  }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'Open Sauce';
+      src: url('https://github.com/shrdst/home/raw/main/OpenSauceSans-SemiBold.ttf') format('truetype');
+    }
 
-  .contenitore {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+    body {
+      background-color: #483E94;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
-  .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .contenitore {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
-  .quadrato1, .quadrato2, .quadrato3 {
-    width: 250px;
-    height: 250px;
-    border: 7px dashed #7361EE;
-    border-radius: 38px;
-    margin: 10px;
-    background-color: #483E94;
-  }
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-  .logo {
-    width: 200px;
-    z-index: 1;
-  }
+    .quadrato1, .quadrato2, .quadrato3 {
+      flex: 1;
+      max-width: 300px;
+      margin: 10px;
+      background-color: #483E94;
+      border-radius: 38px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 7px dashed #7361EE;
+    }
 
-  .testo-quadrato {
-    text-align: justify;
-    font-size: 18.5px;
-    color: white;
-    padding: 10px;
-    line-height: 0.4;
-    font-family: 'Open Sauce', sans-serif;
-  }
-</style>
+    .logo {
+      width: 200px;
+      z-index: 1;
+    }
+
+    .testo-quadrato {
+      font-size: 18.5px;
+      color: white;
+      line-height: 1.2;
+      font-family: 'Open Sauce', sans-serif;
+    }
+  </style>
 </head>
-<body style="background-color: #483E94;">
+<body>
   <div class="contenitore">
     <img src="https://raw.githubusercontent.com/shrdst/home/main/logo.png" alt="Logo di Shard" class="logo">
   </div>
-  <div class="wrapper">
-    <div class="quadrato1">
-      <div class="testo-quadrato">
-        <p>▢ La scimmia dell’estate</p>
-        <p>▢ La scimmia di maggio</p>
-        <p>(playlist)</p>
-        <p>▢ La presa bene (playlist)</p>
-        <p>▢ La scimmia di aprile</p>
-        <p>(playlist)</p>
-        <p>▢ This is my dance space</p>
-        <p>▢ SHRD (broadcast)</p>
+  <div class="contenitore">
+    <div class="wrapper">
+      <div class="quadrato1">
+        <div class="testo-quadrato">
+          <p>▢ La scimmia dell’estate</p>
+          <p>▢ La scimmia di maggio</p>
+          <p>(playlist)</p>
+          <p>▢ La presa bene (playlist)</p>
+          <p>▢ La scimmia di aprile</p>
+          <p>(playlist)</p>
+          <p>▢ This is my dance space</p>
+          <p>▢ SHRD (broadcast)</p>
+        </div>
       </div>
-    </div>
-    <div class="quadrato2">
-      <div class="testo-quadrato">
-        <p>Testo quadrato 2</p>
+      <div class="quadrato2">
+        <div class="testo-quadrato">
+          <p>Testo quadrato 2</p>
+        </div>
       </div>
-    </div>
-    <div class="quadrato3">
-      <div class="testo-quadrato">
-        <p>Testo quadrato 3</p>
+      <div class="quadrato3">
+        <div class="testo-quadrato">
+          <p>Testo quadrato 3</p>
+        </div>
       </div>
     </div>
   </div>
